@@ -1,0 +1,312 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Banner Styling */
+.banner {
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.banner button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.banner button:hover {
+    background-color: #e55347;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 60%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.optometrists {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.optometrist {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.optometrist-photo {
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height to keep it square */
+    object-fit: cover; /* Ensures the image scales to fill the square without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    margin-bottom: 10px;
+}
+
+.optometrist h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.optometrist p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Products Section */
+#products {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#products h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-card p {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+/* location section styling */
+#location {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+/* styles for the location image container */
+.location {
+    display: flex;
+    justify-content: center; /* centers the image */
+    margin-top: 20px; /* adds space above the image */
+}
+
+/* styles for the location image */
+.location img {
+    max-width: 80%; /* scales the image to 80% of the section width */
+    height: auto; /* keeps the aspect ratio */
+    border-radius: 8px; /* optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* optional: adds a shadow */
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #e55347;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px; /* Reduced padding for a more compact footer */
+    font-size: 0.85em; /* Slightly smaller font size */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.footer-links, .footer-contact, .footer-social {
+    flex: 1 1 150px; /* Reduced minimum width */
+    margin: 5px;
+}
+
+.footer-links h4, .footer-contact h4, .footer-social h4 {
+    font-size: 1.1em; /* Slightly smaller title size */
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 3px 0;
+}
+
+.footer-links ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-contact p {
+    margin: 3px 0;
+}
+
+.social-icons a {
+    color: #aaa;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.75em;
+    border-top: 1px solid #444;
+    color: #ccc;
+    margin-top: 10px; /* Adds spacing above footer */
+}
